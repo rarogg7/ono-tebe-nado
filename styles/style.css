@@ -1,0 +1,362 @@
+/*--- Блок "АДРЕС" ---*/
+
+address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-underline-offset: 2px;
+  letter-spacing: 0.01em;
+}
+
+/* Тег "А" */
+
+a {
+  display: block;
+}
+
+/*--- Блок "НАВИГАЦИЯ" ---*/
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  align-items: center;
+  margin-top: 92px;
+  margin-bottom: 91px;
+}
+
+.header__menu {
+  font-size: 18px;
+  margin-left: 50px;
+  margin-right: 20px;
+  text-underline-offset: 3px;
+}
+
+.header__menu ul {
+  display: flex;
+  gap: 34px;
+}
+
+.address .header__address {
+  margin-left: 192px;
+}
+
+.header__logo {
+  width: 137px;
+  margin: auto;
+}
+
+.address ul {
+  list-style-type: none;
+}
+
+.header__links-list .header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__links-list-item {
+  list-style-type: circle;
+}
+
+/*--- Блок "ОБЛОЖКА" ---*/
+
+.cover {
+  position: relative;
+  width: 1100px;
+  height: 757px;
+  background-image: url("/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 180px;
+  z-index: 2;
+}
+
+/* Наложение  */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Заголовок */
+
+.cover__title {
+  position: relative;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 100px;
+  text-transform: uppercase;
+  line-height: 123%;
+  padding: 162px 20px 124px 50px;
+  z-index: 3;
+}
+
+/* Выравнивание текста */
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+  position: relative;
+  top: 4px;
+  right: 14px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0.3em;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+/* Подзаголовок */
+
+.cover__description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 78px;
+  z-index: 3;
+}
+
+.cover__description-text {
+  word-spacing: 0.84em;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Кнопка у подзаголовка */
+
+.bet__button {
+  font-family: "Raleway";
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  background: transparent;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*--- Блок "КАРТОЧКИ" ---*/
+
+.lots {
+  position: relative;
+  margin-bottom: 148px;
+}
+
+.lots__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  justify-content: center;
+  height: 562px;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  list-style-type: none;
+}
+
+/* Кнопка "ПОСМОТРЕТЬ БОЛЬШЕ" */
+
+.lots__look-more-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-left: 64px;
+  margin-top: 30px;
+  text-underline-offset: 4px;
+  display: inline-block;
+}
+
+/* Заголовок блока с карточками */
+
+.lots__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 64px;
+  padding-bottom: 27px;
+  text-underline-offset: 2px;
+}
+
+/* Карточка */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 3;
+}
+
+/* Заголовок карточки */
+
+.card__title {
+  color: #ffffff;
+  width: 334px;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin: 0;
+  padding: 51px 40px 0;
+  line-height: 26px;
+
+}
+
+/* Текст карточки */
+
+.card__text {
+  display: flex;
+  justify-content: start;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0 40px 48px;
+  width: 338px;
+}
+
+.card-link {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  height: 100%;
+}
+
+/* Картинки карточки */
+
+.card_type_film {
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/card-lot-03.jpg);
+}
+
+/*--- Блок "О чём то" ---*/
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 181px;
+}
+
+.about__column {
+  padding-top: 136px;
+}
+
+/* Логотип */
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px 71px;
+}
+
+.about__logo-image {
+  background-image: url(/images/logo-white.svg);
+  width: 148px;
+  height: 116px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Заголовок блока */
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 34px;
+  letter-spacing: 0.3px;
+}
+
+/* Текст блока */
+
+.about__text {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 99px;
+  gap: 24px;
+  width: 690px;
+  letter-spacing: 0.12px;
+}
+
+/*--- Блок "ПОДВАЛ" ---*/
+
+footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 3fr;
+  margin: 0 50px 89px;
+}
+
+/* Блок с иконками на соц сети */
+
+.footer__social-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Блок с меню */
+
+.footer__menu {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  justify-items: start;
+  margin: 0 auto;
+  line-height: 21px;
+
+}
+
+.footer__menu li {
+  list-style: none;
+  text-underline-offset: 4px;
+}
