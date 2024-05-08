@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,4 +32,19 @@ a {
 
 img {
   width: 100%;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-underline-offset: 2px;
+  letter-spacing: 0.01em;
+}
+
+a {
+  display: block;
 }
