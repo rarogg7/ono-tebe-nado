@@ -28,6 +28,7 @@ blockquote {
 
 a {
   color: inherit;
+  display: block;
 }
 
 img {
@@ -43,8 +44,4 @@ address {
   line-height: 24px;
   text-underline-offset: 2px;
   letter-spacing: 0.01em;
-}
-
-a {
-  display: block;
 }

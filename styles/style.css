@@ -47,7 +47,6 @@
 
 .cover {
   position: relative;
-  padding: 378px;
   background: url(../images/cover.jpg) no-repeat center / cover;
   margin-bottom: 181px;
   z-index: -2;
@@ -111,9 +110,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
-  margin-left: 78px;
   z-index: 3;
+  padding: 0 50px 50px 78px;
 }
 
 .cover__description-text {
@@ -177,7 +175,6 @@
   width: 334px;
   height: 563px;
   position: relative;
-  height: 563px;
   z-index: 1;
   background-position: center;
   background-size: cover;
@@ -328,7 +325,6 @@
   display: flex;
   list-style: none;
   font-size: 18px;
-  display: flex;
   text-align: center;
   justify-items: start;
   margin: 0 auto;
